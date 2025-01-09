@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bayangan Gelap Seorang Anak Laki-Laki</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
+    :root {
+      --bg-color: #121212;
+      --text-color: #f4f4f4;
+      --accent-color: #4CAF50;
+      --container-bg: #1e1e1e;
+    }
+
+    [data-theme="light"] {
+      --bg-color: #f4f4f4;
+      --text-color: #121212;
+      --accent-color: #4CAF50;
+      --container-bg: #ffffff;
+    }
+
+    body {
+      font-family: 'Merriweather', serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: var(--container-bg);
+      text-align: center;
+      padding: 20px;
+      color: var(--text-color);
+      font-size: 2rem;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .profile {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .profile img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid var(--accent-color);
+    }
+
+    .profile h3 {
+      margin: 10px 0;
+      color: var(--accent-color);
+    }
+
+    .profile p {
+      color: var(--text-color);
+      font-size: 0.9rem;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: var(--container-bg);
+      border-radius: 8px;
+      box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .chapter {
+      display: none;
+      opacity: 0;
+      animation: fadeIn 0.5s ease forwards;
+    }
+
+    .chapter.active {
+      display: block;
+    }
+
+    .chapter h2 {
+      font-size: 1.8rem;
+      color: var(--accent-color);
+    }
+
+    .chapter p {
+      text-align: justify;
+      text-indent: 2em;
+    }
+
+    .navigation-buttons {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .navigation-buttons button {
+      background-color: var(--accent-color);
+      color: var(--text-color);
+      border: none;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .navigation-buttons button:hover {
+      background-color: darkgreen;
+    }
+
+    .music-controls {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .music-controls button {
+      background-color: var(--accent-color);
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      margin: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .music-controls button:hover {
+      background-color: darkgreen;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: var(--container-bg);
+      color: var(--text-color);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>Bayangan Gelap Seorang Anak Laki-Laki</header>
+
+  <!-- Profile Section -->
+  <div class="profile">
+    <img src="https://img.pikbest.com/png-images/20241010/a-picture-of-a-boy-crying_10941586.png!f305cw" alt="Profile Picture">
+    <h3>Ditulis oleh: Jek's Kartur</h3>
+    <p>Seorang penulis yang senang mengungkapkan kisah-kisah kehidupan melalui kata-kata.</p>
+  </div>
+
+  <!-- Music Controls -->
+  <div class="music-controls">
+    <audio id="background-music" loop autoplay>
+      <source src="https://www.bensound.com/bensound-music/bensound-slowmotion.mp3" type="audio/mp3">
+      Browser Anda tidak mendukung audio HTML5.
+    </audio>
+    <button id="pause-music">Pause Music</button>
+    <button id="play-music" style="display: none;">Play Music</button>
+  </div>
+
+  <div class="container" id="novel-container">
+    <!-- Chapters -->
+    <div id="chapter-1" class="chapter active">
+      <h2>Bab 1: Anak Keempat yang Terlupakan</h2>
+      <p>Fadli, anak keempat dari empat bersaudara, menatap langit senja dari jendela kamar kos kecilnya. Di luar, suara kendaraan berlalu-lalang, sementara pikirannya dipenuhi kekacauan. Honor bulanan sebagai karyawan kontrak selalu pas-pasan, nyaris tidak cukup untuk menutup kebutuhan hidup. Tapi yang membuatnya benar-benar tertekan adalah ayahnya—sosok yang baginya lebih seperti bayangan kelabu yang menghantui hidupnya.
+Ayahnya, Pak Hasan, adalah pria keras yang sulit menaruh perhatian kepada anak-anaknya secara merata. Dari keempat anaknya, ia tampak hanya memuja anak kedua, Faisal. Setiap kali Faisal membutuhkan sesuatu, entah itu uang, nasihat, atau sekadar perhatian, Pak Hasan selalu hadir. Namun ketika Fadli yang butuh dukungan, baik itu berupa kata-kata penyemangat atau sekadar mendengarkan, ayahnya acuh tak acuh, seolah-olah keberadaannya tidak penting.
+"Kenapa aku harus dilahirkan jadi yang terakhir?" gumam Fadli. Kalimat itu telah berulang kali muncul dalam benaknya.
+</p>
+      <div class="navigation-buttons">
+        <button class="next-chapter">Bab Berikutnya</button>
+      </div>
+    </div>
+    <div id="chapter-2" class="chapter">
+      <h2>Bab 2: Beban yang Tidak Adil</h2>
+      <p>Suatu hari, telepon Fadli berdering. Itu dari ayahnya. Ia mengangkatnya dengan perasaan campur aduk.
+"Fadli, kamu udah transfer uang bulanan buat Ibu belum?" tanya Pak Hasan tanpa basa-basi.
+Fadli tertegun. Ia baru saja membayar tagihan listrik dan makanannya hampir habis.
+"Belum, Yah. Honor bulan ini pas-pasan. Mungkin minggu depan," jawabnya hati-hati.
+Namun respons yang ia terima adalah suara menggelegar penuh amarah.
+"Kamu ini nggak becus! Faisal aja nggak pernah telat bantuin keluarga. Kalau Faisal bisa, kenapa kamu nggak?! Dasar anak nggak tahu diri!"
+Telepon itu terputus sebelum Fadli bisa menjawab. Ia menatap layar ponselnya dengan mata berkaca-kaca. Kata-kata ayahnya terasa seperti pisau yang menusuk dada. Fadli tahu Faisal memang sukses, bekerja di perusahaan besar dengan gaji yang jauh lebih tinggi. Tapi ia tidak pernah diminta memberikan setengah dari pendapatannya untuk keluarga.
+"Kenapa aku selalu dibandingkan? Kenapa aku yang harus memikul semua ini?" pikir Fadli dengan geram. Rasa iri dan dendam terhadap Faisal semakin mengakar, meskipun ia tahu kakaknya tidak sepenuhnya bersalah.
+</p>
+      <div class="navigation-buttons">
+        <button class="prev-chapter">Bab Sebelumnya</button>
+        <button class="next-chapter">Bab Berikutnya</button>
+      </div>
+    </div>
+    <div id="chapter-3" class="chapter">
+      <h2>Bab 3: Masalah Tanpa Dukungan</h2>
+      <p>Beberapa minggu kemudian, masalah baru datang. Motor Fadli, satu-satunya alat transportasi yang ia andalkan untuk bekerja, mogok di tengah jalan. Ia membutuhkan uang untuk memperbaikinya, tetapi semua gajinya telah habis untuk kebutuhan keluarga. Dengan penuh harapan, ia menghubungi ayahnya.
+"Yah, motorku rusak. Aku nggak bisa kerja kalau nggak diperbaiki. Bisa bantuin aku?"
+Namun jawaban ayahnya membuat hatinya hancur.
+"Kamu pikir aku punya duit buat hal nggak penting kayak gitu? Kamu kan laki-laki, cari solusi sendiri! Jangan manja!"
+Fadli ingin berteriak, ingin meluapkan semua rasa sakit dan kecewa yang selama ini ia pendam. Tapi ia hanya diam. Ia sadar bahwa, seperti biasa, ia harus menghadapi semuanya sendirian.
+</p>
+      <div class="navigation-buttons">
+        <button class="prev-chapter">Bab Sebelumnya</button>
+        <button class="next-chapter">Bab Berikutnya</button>
+      </div>
+    </div>
+    <div id="chapter-4" class="chapter">
+      <h2>Bab 4: Api Dendam</h2>
+      <p>Malam itu, Fadli duduk di pojok kamarnya dengan kepala tertunduk. Hatinya dipenuhi oleh rasa sakit, amarah, dan rasa tidak adil. Ia merasa seperti burung dalam sangkar, terikat oleh harapan ayahnya yang tidak pernah memihaknya.
+Ia mengingat masa kecilnya—bagaimana setiap prestasi yang ia raih selalu dianggap biasa saja, sementara Faisal selalu mendapatkan pujian bahkan untuk hal-hal kecil. Ia ingat bagaimana ayahnya memandangnya dengan tatapan dingin ketika ia menceritakan mimpinya untuk melanjutkan kuliah.
+"Kenapa aku selalu jadi yang tidak penting?" bisiknya lirih.
+Dendam itu semakin tumbuh. Ia bertekad untuk membuktikan bahwa ia bisa lebih dari apa yang ayahnya pikirkan. Namun di sisi lain, dendam itu juga membuatnya lelah, seperti membawa beban tak terlihat yang semakin hari semakin berat.
+</p>
+      <div class="navigation-buttons">
+        <button class="prev-chapter">Bab Sebelumnya</button>
+        <button class="next-chapter">Bab Berikutnya</button>
+      </div>
+    </div>
+    <div id="chapter-5" class="chapter">
+      <h2>Bab 5: Jalan Baru</h2>
+      <p>Dalam keheningan malam, Fadli menyadari sesuatu: ia tidak bisa terus hidup dengan membenci ayahnya. Bukan karena ayahnya layak dimaafkan, tetapi karena dendam itu perlahan membunuh dirinya sendiri.
+Keesokan harinya, Fadli bangkit. Ia memutuskan untuk mulai mencari pekerjaan sampingan untuk menambah penghasilannya. Dengan waktu yang tersisa, ia juga mencoba belajar keterampilan baru, seperti desain grafis melalui tutorial online.
+Setiap malam, ia merasa lelah, tetapi untuk pertama kalinya, ia merasa bahwa semua perjuangannya memiliki arah.
+</p>
+      <div class="navigation-buttons">
+        <button class="prev-chapter">Bab Sebelumnya</button>
+        <button class="next-chapter">Bab Berikutnya</button>
+      </div>
+    </div>
+     <div id="chapter-6" class="chapter">
+      <h2>Bab 6: Berdamai dengan Masa Lalu</h2>
+      <p>
+        Bertahun-tahun kemudian, Fadli berhasil mendapatkan pekerjaan yang lebih baik. Ia mulai membangun hidupnya sendiri, jauh dari bayang-bayang Faisal dan tuntutan ayahnya.
+Suatu hari, ia pulang ke kampung halamannya. Ayahnya yang kini sudah tua duduk di kursi kayu di depan rumah. Fadli mendekatinya dengan hati yang penuh keberanian.
+"Yah," panggilnya pelan.
+Pak Hasan menatapnya, matanya yang dulu tajam kini mulai redup.
+"Apa yang kamu mau?" tanya ayahnya dingin.
+Fadli menghela napas. "Aku cuma mau bilang, aku sudah maafin Ayah. Tapi mulai sekarang, aku hidup untuk diriku sendiri. Bukan untuk memenuhi harapan Ayah."
+Pak Hasan terdiam. Tidak ada kata-kata yang keluar dari mulutnya. Tapi Fadli tidak membutuhkan jawaban. Ia telah menyelesaikan pertarungan batinnya.
+      </p>
+      <div class="navigation-buttons">
+        <button class="prev-chapter">Bab Sebelumnya</button>
+        <button class="next-chapter">Bab Berikutnya</button>
+      </div>
+    </div>
+
+    <div id="epilog" class="chapter">
+      <h2>Epilog</h2>
+      <p>
+        Fadli kembali ke kota dengan perasaan yang lebih ringan. Hidupnya mungkin tidak sempurna, tetapi ia tahu satu hal: ia tidak lagi terikat oleh bayangan dendam masa lalu.
+Ia hidup bukan untuk membuktikan siapa dirinya kepada ayahnya, tetapi untuk dirinya sendiri.
+"Aku bukan lagi anak keempat yang dilupakan. Aku adalah diriku sendiri."
+TAMAT
+
+      </p>
+      <div class="navigation-buttons">
+        <button class="prev-chapter">Bab Sebelumnya</button>
+      </div>
+    </div>
+  </div>
+  <footer>
+    &copy; 2025 Novel Bayangan Gelap Seorang Anak Laki-Laki. Dibuat dengan cinta dan dedikasi.     IG:Fahrialza_
+  </footer>
+
+  <script>
+    const chapters = document.querySelectorAll('.chapter');
+    let currentChapter = 0;
+
+    function updateChapter(index) {
+      chapters.forEach((chapter, i) => {
+        chapter.classList.remove('active');
+        if (i === index) {
+          chapter.classList.add('active');
+        }
+      });
+    }
+
+    // Event listeners for "Bab Sebelumnya" and "Bab Berikutnya"
+    document.querySelectorAll('.prev-chapter').forEach((button) => {
+      button.addEventListener('click', () => {
+        if (currentChapter > 0) {
+          currentChapter--;
+          updateChapter(currentChapter);
+        }
+      });
+    });
+
+    document.querySelectorAll('.next-chapter').forEach((button) => {
+      button.addEventListener('click', () => {
+        if (currentChapter < chapters.length - 1) {
+          currentChapter++;
+          updateChapter(currentChapter);
+        }
+      });
+    });
+
+    // Music Controls
+    const music = document.getElementById('background-music');
+    const playButton = document.getElementById('play-music');
+    const pauseButton = document.getElementById('pause-music');
+
+    pauseButton.addEventListener('click', () => {
+      music.pause();
+      pauseButton.style.display = 'none';
+      playButton.style.display = 'inline';
+    });
+
+    playButton.addEventListener('click', () => {
+      music.play();
+      playButton.style.display = 'none';
+      pauseButton.style.display = 'inline';
+    });
+  </script>
+</body>
+</html>
